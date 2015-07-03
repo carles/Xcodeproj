@@ -2,6 +2,14 @@
 
 ## Master
 
+###### Bug Fixes
+* Ugly monkey patching to prevent errors with CMake (2.8.12) generated Xcode 
+  projects. An error was being thrown complaining about not recognizing the 
+  attributes refType, buildSettings and buildStyles. Deactivating the error
+  checking doesn't seem to cause any immediate problem. But obviously this 
+  is not a real solution, somebody who actually understands the code should
+  have a look at it.
+
 ##### Enhancements
 
 * Vastly speed up deterministic UUID generation for large projects.  
